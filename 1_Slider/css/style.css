@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    line-height: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: brown;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+
+.slider {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slider li {
+    display: none;
+}
+.slider .visible {
+    display: inline-block;
+}
+.slider img {
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+.imgDescription {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.nav button {
+    background: brown;
+    border: 2px solid brown;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+    .nav button:hover {
+        background: #fff;
+        border: 2px solid brown;
+        color: brown;
+        transition: 0.2s;
+    }
+    .nav button:active {
+        box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, 0.5);
+    }
+#prevPicture {
+    border-radius: 10px 0 0 10px;
+}
+#nextPicture {
+    border-radius: 0 10px 10px 0;
+    border-left: 2px solid #fff;
+}
+    #nextPicture:hover {
+        border-left: 2px solid brown;
+    }
