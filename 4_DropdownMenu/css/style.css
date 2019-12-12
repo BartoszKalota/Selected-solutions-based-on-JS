@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    line-height: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: brown;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+
+.description {
+    font-size: 1em;
+    margin: 20px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    line-height: 1.5em;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+
+.nav > ul {
+    display: flex;
+}
+
+.nav > ul > li {
+    background: brown;
+    color: #fff;
+    border: 1px solid brown;
+    border-right: 1px solid #fff;
+    padding: 0 15px;
+    position: relative;
+}
+.nav > ul > li:last-child {
+    border-right: 1px solid brown;
+}
+    .nav > ul > li:hover {
+        background: #fff;
+        border: 1px solid brown;
+        color: brown;
+        transition: 0.2s;
+    }
+
+.nav > ul > li > ul {
+    display: none;
+    width: 102%;
+    position: absolute;
+}
+
+.nav > ul > li > ul > li {
+    background: brown;
+    color: #fff;
+    border-top: 1px solid #fff;
+    font-size: 0.8em;
+    line-height: 2em;
+    padding: 0 5px;
+    text-align: center;
+    position: relative;
+    left: -16px;
+}
+    .nav > ul > li > ul > li:hover {
+        background: #fff;
+        border: 1px solid brown;
+        color: brown;
+        transition: 0.2s;
+    }
