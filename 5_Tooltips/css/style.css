@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    line-height: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: brown;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+}
+
+.description {
+    font-size: 1em;
+    margin: 20px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+p {
+    padding: 20px 50px;
+}
+
+.tooltip {
+    text-decoration: underline;
+    color: blue;
+    position: relative;
+    display: inline-block;
+}
+.tooltipText {
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 #000;
+    position: absolute;
+    top: 120%;
+    display: block;
+    background-color: white;
+    color: brown;
+    z-index: 1;
+}
+.tooltip:first-of-type .tooltipText {
+    width: 130px;
+    text-align: center;
+}
