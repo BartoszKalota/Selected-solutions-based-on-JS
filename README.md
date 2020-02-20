@@ -19,5 +19,5 @@ Contents:
 Project in progress. I will systematically add some features during the Coders Lab course.
 
 # Technologies
-* JS,
+* JS (ES5),
 * HTML and CSS.
