@@ -8,8 +8,6 @@ level1Items.forEach(function(level1Item) {
             level2Menu.style.display = 'block';
         }
     });
-});
-level1Items.forEach(function(level1Item) {
     level1Item.addEventListener('mouseout', function(e) {
         const level2Menu = this.querySelector('ul');
         if ( level2Menu !== null ) {

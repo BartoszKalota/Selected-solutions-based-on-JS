@@ -9,8 +9,6 @@ tooltips.forEach(function(tooltip) {
         tooltipText.innerText = this.dataset.text;
         this.appendChild(tooltipText);
     });
-});
-tooltips.forEach(function(tooltip) {
     tooltip.addEventListener('mouseout', function(e) {
         const tooltipText = this.querySelector('span');
         this.removeChild(tooltipText);
