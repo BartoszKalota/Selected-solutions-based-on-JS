@@ -1,13 +1,12 @@
-function init() {
+const listItems = document.querySelectorAll('.gallery li');
+const body = document.querySelector('body');
 
-    const listItems = document.querySelectorAll('.gallery li');
-    const body = document.querySelector('body');
-    
-    function showFullScreen(event) {
+listItems.forEach(function(listItem) {
+    listItem.addEventListener('click', function(e) {
         /* Utworzenie zestawu tagów:
         <div class="fullScreen">
-          <img src="...">
-          <button class="close">Close</button>
+            <img src="...">
+            <button class="close">Close</button>
         </div> */
         const divBig = document.createElement('div');
         divBig.classList.add('fullScreen');
@@ -24,18 +23,9 @@ function init() {
         divBig.appendChild(buttonBig);
         
         //Zdarzenie do przycisku zamykania
-        buttonBig.addEventListener('click', closeFullScreen);
-    }
-
-    function closeFullScreen(event) {
-        const divBig = this.parentElement;
-        body.removeChild(divBig);
-    }
-
-    listItems.forEach(function(listItem) {
-        listItem.addEventListener('click', showFullScreen);
+        buttonBig.addEventListener('click', function(e) {
+            const divBig = this.parentElement;
+            body.removeChild(divBig);
+        });
     });
-
-}
-document.addEventListener('DOMContentLoaded', init);
-
+});

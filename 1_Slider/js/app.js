@@ -1,42 +1,35 @@
-function init() {
+const prevBtn = document.getElementById('prevPicture');
+const nextBtn = document.getElementById('nextPicture');
+const listItems = document.querySelectorAll('.slider li');
+const spanCounter = document.getElementById('imgCounter');
 
-    const prevBtn = document.getElementById('prevPicture');
-    const nextBtn = document.getElementById('nextPicture');
-    const listItems = document.querySelectorAll('.slider li');
-    const spanCounter = document.getElementById('imgCounter');
-    
-    let counter = 0;
+let counter = 0;
+listItems[counter].classList.add('visible');
+
+prevBtn.addEventListener('click', function(e) {
+    listItems[counter].classList.remove('visible');
+    counter--;
+    if ( counter < 0 ) {
+        counter = listItems.length - 1;
+    }
     listItems[counter].classList.add('visible');
 
-    function showPrevImg(event) {
-        listItems[counter].classList.remove('visible');
-        counter--;
-        if ( counter < 0 ) {
-            counter = listItems.length - 1;
-        }
-        listItems[counter].classList.add('visible');
+    showCounter();
+});
 
-        showCounter();
+nextBtn.addEventListener('click', function(e) {
+    listItems[counter].classList.remove('visible');
+    counter++;
+    if ( counter >= listItems.length ) {
+        counter = 0;
     }
-    prevBtn.addEventListener('click', showPrevImg);
+    listItems[counter].classList.add('visible');
 
-    function showNextImg(event) {
-        listItems[counter].classList.remove('visible');
-        counter++;
-        if ( counter >= listItems.length ) {
-            counter = 0;
-        }
-        listItems[counter].classList.add('visible');
+    showCounter();
+});
 
-        showCounter();
-    }
-    nextBtn.addEventListener('click', showNextImg);
-
-    function showCounter() {
-        let imgCounter = counter;
-        imgCounter++;
-        spanCounter.innerText = imgCounter;
-    }
-
+function showCounter() {
+    let imgCounter = counter;
+    imgCounter++;
+    spanCounter.innerText = imgCounter;
 }
-document.addEventListener('DOMContentLoaded', init);
