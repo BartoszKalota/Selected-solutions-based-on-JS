@@ -1,7 +1,7 @@
 # Selected solutions based on JS (Workshop-2)
-Selected solutions based on JS as the part of the Coders Lab course.
+Selected solutions based on JavaScript (ES5) as the part of the Coders Lab course.
 
-Contents:
+# Contents
 1. Slider
     * Click on previous button or next button to see another image.
 2. Gallery
@@ -16,8 +16,8 @@ Contents:
     * The most developed one from the collection. It enables to create and manage your task list.
 
 # Information
-Project in progress. I will systematically add some features during the Coders Lab course.
+The aim of this project was to use JavaScript in ES5 standard. The ES6 standard is utilized in projects including at least Workshop-4 in their titles.
 
 # Technologies
-* JS (ES5),
-* HTML and CSS.
+* JS (ES5)
+* HTML, CSS
