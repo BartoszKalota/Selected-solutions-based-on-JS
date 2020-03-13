@@ -55,6 +55,8 @@ h1 {
 
 
 #taskList {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px 20px 20px 40px;
 }
 .done {
