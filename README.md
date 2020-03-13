@@ -1,19 +1,20 @@
-# Selected solutions based on JS (Workshop-2)
-Selected solutions based on JavaScript (ES5) as the part of the Coders Lab course.
+# ToDo List (Workshop-2)
+You can create and manage your task list (build with JS (ES5) and CSS).
 
-# Contents
-1. Slider
-    * Click on previous button or next button to see another image.
-2. Gallery
-    * Click any image to open it in full screen mode.
-3. Gallery with filter
-    * Show or hide images with entered tags.
-4. Dropdown menu
-    * Simple menu where visibility of submenu items is being handled by JS.
-5. Tooltips
-    * Hover an underlined text to see a tooltip.
-6. **ToDo List**
-    * The most developed one from the collection. It enables to create and manage your task list.
+![Project screenshot](/images/project_screen.jpg)
+
+# Live demo
+https://bartoszkalota.github.io/ToDo-List/
+
+# Features
+* Tasks management:
+    * adding
+    * **automatic sorting in terms of priority**
+    * marking as finished
+    * deleting
+    * calculation of the number of unfinished tasks
+    * removing of finished ones
+* Inputs data validation (appropriate error communications)
 
 # Information
 The aim of this project was to use JavaScript in ES5 standard. The ES6 standard is utilized in projects including at least Workshop-4 in their titles.
