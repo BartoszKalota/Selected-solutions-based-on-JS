@@ -1,5 +1,5 @@
 # ToDo List (Workshop-2)
-You can create and manage your task list (build with JS (ES5) and CSS).
+You can create and manage your task list (build with JS (ES5) and CSS). The project is the part of the Coders Lab course.
 
 ![Project screenshot](/images/project_screen.jpg)
 
