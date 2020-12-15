@@ -1,10 +1,11 @@
 # ToDo List (Workshop-2)
 You can create and manage your task list (build with JS (ES5) and CSS). The project is the part of the Coders Lab course.
 
-![Project screenshot](/images/project_screen.jpg)
-
 # Live demo
 https://bartoszkalota.github.io/ToDo-List/
+
+# Video demo
+[![Watch the video](./images/video-demo.jpg)](https://youtu.be/MjMYO54E1D0)
 
 # Features
 * Tasks management:
